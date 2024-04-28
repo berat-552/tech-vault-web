@@ -1,9 +1,9 @@
-import ToggleThemeButton from "./components/ToggleThemeButton";
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
     <div>
-      <ToggleThemeButton />
+      <Navbar />
     </div>
   );
 }
