@@ -1,4 +1,3 @@
-import React from "react";
 import ToggleThemeButton from "./ToggleThemeButton";
 
 function Navbar() {
@@ -24,22 +23,20 @@ function Navbar() {
           </div>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-md"
           >
-            <li>
-              <a>Homepage</a>
-            </li>
-            <li>
-              <a>Portfolio</a>
-            </li>
-            <li>
-              <a>About</a>
-            </li>
+            <a
+              href="https://github.com/moabukar/tech-vault"
+              target="_blank"
+              className="cursor-pointer hover:bg-gray-700 transition-all 300ms rounded-md text-start text-primary font-medium px-2"
+            >
+              About
+            </a>
           </ul>
         </div>
       </div>
       <div className="navbar-center">
-        <a href="#" className="btn btn-ghost text-xl">
+        <a href="#" className="btn btn-ghost text-lg sm:text-xl">
           Tech Vault Web
         </a>
       </div>
