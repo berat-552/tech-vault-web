@@ -27,5 +27,5 @@ jobs:
       run: |
         registry="moabukar"
         tag="tools:tech-vault-web"
-        docker build . -f Dockerfile.tech-vault-web -t ${registry}/${tag}
+        docker build . -f Dockerfile -t ${registry}/${tag}
         docker push ${registry}/${tag}
