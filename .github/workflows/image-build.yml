@@ -26,6 +26,6 @@ jobs:
     - name: Build and Publish (tech-vault-web)
       run: |
         registry="moabukar"
-        tag="tools:tech-vault-web"
+        tag="tech-vault-web"
         docker build . -f Dockerfile -t ${registry}/${tag}
         docker push ${registry}/${tag}
