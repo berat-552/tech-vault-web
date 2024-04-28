@@ -1,17 +1,17 @@
-FROM node:19
+FROM node:19 as builder
+
+WORKDIR /app
+COPY package*.json ./
+RUN npm install
+
+COPY . .
+
+FROM node:19-slim
 
 WORKDIR /app
 
-# Copy the package.json (and package-lock.json, if available) file into the container
-COPY package.json .
+COPY --from=builder /app ./
 
-# Install dependencies
-RUN npm i
+EXPOSE 5174
 
-# Copy the rest of your project's files into the container
-COPY . .
-
-EXPOSE 5173
-
-# Run development server
 CMD ["npm", "run", "dev"]

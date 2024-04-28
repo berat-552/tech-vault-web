@@ -44,10 +44,10 @@ The **Tech-Vault Web** is a web application designed to help aspiring tech enthu
    <br>
    <br>
 4. Once the image is built, run the container, optionally add the `-d` flag to detach the container from the terminal:
-   `docker run -d -p 5173:5173 tech-vault-web`
+   `docker run -d -p 5174:5174 tech-vault-web`
    <br>
    <br>
-5. Now your application should be running, and you can access it by navigating to http://localhost:5173 in your web browser.
+5. Now your application should be running, and you can access it by navigating to http://localhost:5174 in your web browser.
    <br>
    <br>
 Some optional flags:
