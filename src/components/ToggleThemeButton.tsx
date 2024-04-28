@@ -31,7 +31,7 @@ function ToggleThemeButton() {
         type="checkbox"
         value="light"
         className="toggle theme-controller"
-        checked={theme === "dark"}
+        checked={theme === "light"}
         onChange={toggleTheme}
       />
       <svg
