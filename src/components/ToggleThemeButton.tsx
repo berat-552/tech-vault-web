@@ -16,7 +16,7 @@ function ToggleThemeButton() {
   };
 
   return (
-    <div className="dropdown mx-4">
+    <div className="dropdown mx-4 z-10">
       <div tabIndex={0} role="button" className="btn m-1">
         Theme
         <svg
