@@ -2,15 +2,12 @@ import { useEffect, useState } from "react";
 import { themes } from "../constants/themes";
 
 function ToggleThemeButton() {
-  // Initialize theme state from local storage or default to 'default'
   const [theme, setTheme] = useState(localStorage.getItem("theme") || "default");
 
-  // Effect to update local storage when theme changes
   useEffect(() => {
     localStorage.setItem("theme", theme);
   }, [theme]);
 
-  // Function to change theme
   const handleChange = (newTheme: string) => {
     setTheme(newTheme);
   };
@@ -31,8 +28,7 @@ function ToggleThemeButton() {
       </div>
       <ul
         tabIndex={0}
-        className="dropdown-content z-[1] p-2 shadow-2xl bg-base-300 rounded-box max-w-26 overflow-y-auto"
-        // Set a fixed height with vertical scrolling
+        className="dropdown-content z-[1] shadow-2xl bg-base-300 rounded-box overflow-y-auto max-h-36"
       >
         {themes.map((item) => (
           <li key={item}>
