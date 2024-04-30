@@ -32,7 +32,7 @@ function ToggleThemeButton() {
       <ul
         tabIndex={0}
         className="dropdown-content z-[1] p-2 shadow-2xl bg-base-300 rounded-box max-w-26 overflow-y-auto"
-        style={{ maxHeight: "300px" }} // Set a fixed height with vertical scrolling
+        // Set a fixed height with vertical scrolling
       >
         {themes.map((item) => (
           <li key={item}>
