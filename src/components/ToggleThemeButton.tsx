@@ -1,16 +1,13 @@
 import { useEffect, useState } from "react";
-import Cookies from "js-cookie";
 
 function ToggleThemeButton() {
-  const [theme, setTheme] = useState(Cookies.get("theme") || "light");
+  const [toggle, setToggle] = useState(false);
 
   useEffect(() => {
-    Cookies.set("theme", theme, { expires: 7 });
-  }, [theme]);
-
-  const toggleTheme = () => {
-    setTheme((currentTheme) => (currentTheme === "light" ? "dark" : "light"));
-  };
+    document
+      .querySelector("html")
+      ?.setAttribute("data-theme", toggle ? "light" : "dark");
+  }, [toggle]);
 
   return (
     <label className="flex cursor-pointer gap-2 p-4">
@@ -31,8 +28,8 @@ function ToggleThemeButton() {
         type="checkbox"
         value="light"
         className="toggle theme-controller"
-        checked={theme === "light"}
-        onChange={toggleTheme}
+        checked={toggle}
+        onChange={() => setToggle(!toggle)}
       />
 
       <svg
