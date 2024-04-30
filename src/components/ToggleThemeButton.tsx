@@ -1,10 +1,11 @@
 import { useEffect, useState } from "react";
+import Cookies from "js-cookie";
 
 function ToggleThemeButton() {
-  const [theme, setTheme] = useState(localStorage.getItem("theme") || "light");
+  const [theme, setTheme] = useState(Cookies.get("theme") || "light");
 
   useEffect(() => {
-    localStorage.setItem("theme", theme);
+    Cookies.set("theme", theme, { expires: 7 });
   }, [theme]);
 
   const toggleTheme = () => {
