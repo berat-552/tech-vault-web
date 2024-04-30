@@ -16,7 +16,7 @@ function ToggleThemeButton() {
   };
 
   return (
-    <div className="dropdown mx-4 z-10">
+    <div className="dropdown mx-2 z-10">
       <div tabIndex={0} role="button" className="btn m-1">
         Theme
         <svg
@@ -31,7 +31,7 @@ function ToggleThemeButton() {
       </div>
       <ul
         tabIndex={0}
-        className="dropdown-content z-[1] p-2 shadow-2xl bg-base-300 rounded-box max-w-32 overflow-y-auto"
+        className="dropdown-content z-[1] p-2 shadow-2xl bg-base-300 rounded-box max-w-26 overflow-y-auto"
         style={{ maxHeight: "300px" }} // Set a fixed height with vertical scrolling
       >
         {themes.map((item) => (
