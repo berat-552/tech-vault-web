@@ -2,6 +2,8 @@
 
 The **Tech-Vault Web** is a web application designed to help aspiring tech enthusiasts practice and prepare for technical interviews. Leveraging the core functionality of the **[Tech Vault CLI](https://github.com/moabukar/tech-vault-cli)**, this web application provides users with random technical interview questions sourced from the **[Tech Vault](https://github.com/moabukar/tech-vault)**.
 
+![Demo Image](./public/demo-image.png)
+
 ### Prerequisites
 
 - NodeJS installed on your machine (preferably the LTS version)
@@ -18,11 +20,11 @@ The **Tech-Vault Web** is a web application designed to help aspiring tech enthu
 2. Navigate to the project directory:
    `cd tech-vault-web`
    <br>
-    <br>
+   <br>
 3. Install dependencies:
    `npm install`
    <br>
-    <br>
+   <br>
 4. Start the development environment with npm:
    `npm run dev`
    <br>
@@ -50,7 +52,7 @@ The **Tech-Vault Web** is a web application designed to help aspiring tech enthu
 5. Now your application should be running, and you can access it by navigating to http://localhost:5174 in your web browser.
    <br>
    <br>
-Some optional flags:
+   Some optional flags:
 
 - `-d` - To run the container in the background (Detach Mode)
 - `--rm` - To delete the container, when you stop the container
